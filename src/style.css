@@ -1,0 +1,12 @@
+.App {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+h1 {
+  margin: 50px auto;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+}
