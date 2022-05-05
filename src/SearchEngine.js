@@ -29,7 +29,7 @@ export default function SearchEngine() {
   }
   if (loaded) {
     return (
-      <div>
+      <div className="SearchEngine">
         <form onSubmit={handleSubmit}>
           <input type="search" onChange={updateCity} />
           <input type="submit" value="search" />
@@ -50,7 +50,7 @@ export default function SearchEngine() {
     );
   } else {
     return (
-      <div>
+      <div className="SearchEngine">
         <form onSubmit={handleSubmit}>
           <input type="search" onChange={updateCity} />
           <input type="submit" value="search" />

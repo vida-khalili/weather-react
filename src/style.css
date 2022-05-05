@@ -2,6 +2,21 @@
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
+.SearchEngine {
+  height: 300px;
+ max-height:300px;
+}
+
+
+.Footer a {
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
+
+
 h1 {
   margin: 50px auto;
 }
