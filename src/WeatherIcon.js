@@ -1,34 +1,49 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather";
-
+import icon_01d from "./img/icons/icon_01d.svg"
+import icon_01n from "./img/icons/icon_01n.svg"
+import icon_02d from "./img/icons/icon_02d.svg"
+import icon_02n from "./img/icons/icon_02n.svg"
+import icon_03d from "./img/icons/icon_03d.svg"
+import icon_03n from "./img/icons/icon_03n.svg"
+import icon_04d from "./img/icons/icon_03n.svg"
+import icon_04n from "./img/icons/icon_04n.svg"
+import icon_09n from "./img/icons/icon_09n.svg"
+import icon_09d from "./img/icons/icon_09d.svg"
+import icon_10n from "./img/icons/icon_10n.svg"
+import icon_10d from "./img/icons/icon_10d.svg"
+import icon_11n from "./img/icons/icon_11n.svg"
+import icon_11d from "./img/icons/icon_11d.svg"
+import icon_13n from "./img/icons/icon_13n.svg"
+import icon_13d from "./img/icons/icon_13d.svg"
+import icon_50n from "./img/icons/icon_50n.svg"
+import icon_50d from "./img/icons/icon_50d.svg"
+import  "./WeatherIcon.css"
 export default function WeatherIcon(props) {
   const codeMapping = {
-    "01d": "CLEAR_DAY",
-    "01n": "CLEAR_NIGHT",
-    "02d": "PARTLY_CLOUDY_DAY",
-    "02n": "PARTLY_CLOUDY_NIGHT",
-    "03d": "PARTLY_CLOUDY_DAY",
-    "03n": "PARTLY_CLOUDY_NIGHT",
-    "04d": "CLOUDY",
-    "04n": "CLOUDY",
-    "09d": "RAIN",
-    "09n": "RAIN",
-    "10d": "RAIN",
-    "10n": "RAIN",
-    "11d": "RAIN",
-    "11n": "RAIN",
-    "13d": "SNOW",
-    "13n": "SNOW",
-    "50d": "FOG",
-    "50n": "FOG",
+    "01d": icon_01d,
+    "01n": icon_01n,
+    "02d": icon_02d,
+    "02n": icon_02n,
+    "03d": icon_03d,
+    "03n": icon_03n,
+    "04d": icon_04d,
+    "04n": icon_04n,
+    "09d": icon_09d,
+    "09n": icon_09n,
+    "10d": icon_10d,
+    "10n": icon_10n,
+    "11d": icon_11d,
+    "11n": icon_11n,
+    "13d": icon_13d,
+    "13n": icon_13n,
+    "50d": icon_50d,
+    "50n": icon_50n,
   };
 
   return (
-    <ReactAnimatedWeather
-      icon={codeMapping[props.code]}
-      color="#1e1e1e"
-      size={props.size}
-      animate={true}
-    />
+      <img className="WeatherIcon"
+           src={codeMapping[props.code]}
+           alt={"icon"}
+      />
   );
 }
