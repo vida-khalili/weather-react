@@ -1,0 +1,7 @@
+.Forecast {
+    font-family: "Quicksand", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+

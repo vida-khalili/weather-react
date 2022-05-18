@@ -1,10 +1,5 @@
-.Forecast {
-    font-family: "Quicksand", Helvetica, Arial, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
 .forecast-card {
+    padding: 15px 0;
     width: 150px;
     border-radius: 10px;
     background: #ffffff;
@@ -24,9 +19,9 @@
     width: 45px;
 }
 .min-temp {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .max-temp {
-    font-weight: 500;
+    font-weight: 600;
 }
