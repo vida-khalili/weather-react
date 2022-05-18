@@ -2,7 +2,7 @@
   font-family: "Quicksand", Helvetica, Arial, sans-serif;
   background: white;
   border-radius: 16px;
-  box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   padding: 40px;
   color: rgb(135, 135, 135);
 }
@@ -43,7 +43,6 @@
 
 .Weather h1 {
   margin: 20px 0 10px 0;
-  line-height: 29px;
   font-weight: bold;
   font-size: 38px;
   line-height: 48px;
@@ -70,10 +69,7 @@
 }
 
 .Weather .temperature {
-  font-weight: bold;
   color: rgb(33, 33, 33);
-  margin-left: 5px;
-  font-weight: 400;
   margin-left: 10px;
   font-weight: bold;
   font-size: 80px;
@@ -87,21 +83,8 @@
 .Weather .unit {
   color: rgb(33, 33, 33);
   font-size: 28px;
-  line-height: 36px;
   font-weight: normal;
   position: relative;
   line-height: 1;
   top: -34px;
-}
-
-.Weather footer {
-  font-size: 14px;
-  margin-top: 40px;
-  line-height: 18px;
-  text-align: center;
-  color: rgba(39, 33, 66, 0.4);
-}
-
-.Weather footer a {
-  color: #5da9f1;
 }
