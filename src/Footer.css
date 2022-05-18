@@ -1,0 +1,11 @@
+p { background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Footer a {
+    font-weight: 500;
+    color: #156fc0;
+    text-decoration: none;
+}
