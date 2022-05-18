@@ -51,37 +51,14 @@ export default function Weather(props) {
             </div>
             <div className="col-3 p-0">
               <button className="btn btn-primary w-100">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"/>
               </button>
             </div>
           </div>
         </form>
         <WeatherInfo data={weatherData} />
         <footer>
-          This project was coded by{" "}
-          <a
-            href="https://www.linkedin.com/in/vida-khalili-bbb500a4/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vida Khalili
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/vida-khalili/weather-react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            open-sourced on GitHub
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://fanciful-tarsier-621537.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hosted on Netlify
-          </a>
+
         </footer>
       </div>
     );

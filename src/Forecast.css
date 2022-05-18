@@ -1,0 +1,32 @@
+.Forecast {
+    font-family: "Quicksand", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.ForecastCard {
+    width: 150px;
+    border-radius: 10px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.ForecastCard ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.ForecastIcon {
+    margin: 0 auto;
+    display: block;
+    width: 45px;
+}
+.minTemp {
+    margin-right: 5px;
+}
+
+.maxTemp {
+    font-weight: 500;
+}
