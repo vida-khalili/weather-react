@@ -17,7 +17,6 @@ import icon_13n from "../img/icons/icon_13n.svg"
 import icon_13d from "../img/icons/icon_13d.svg"
 import icon_50n from "../img/icons/icon_50n.svg"
 import icon_50d from "../img/icons/icon_50d.svg"
-import  "../styles/WeatherIcon.css"
 export default function WeatherIcon(props) {
   const codeMapping = {
     "01d": icon_01d,

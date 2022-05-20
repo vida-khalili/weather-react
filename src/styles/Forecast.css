@@ -1,7 +1,13 @@
 .Forecast {
-    font-family: "Quicksand", Helvetica, Arial, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+  font-family: "Quicksand", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
+@media screen and (max-width:500px) {
+  .Forecast {
+  flex-direction: column;
+  align-items: center;
+  }  
+}

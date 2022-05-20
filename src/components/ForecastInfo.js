@@ -1,27 +1,31 @@
 import React from "react";
-import Sunny from "../img/icons/icon_01d.svg";
-import "../styles/ForecastInfo.css"
+import "../styles/ForecastInfo.css";
+import WeatherIcon from "./WeatherIcon";
 
-function ForecastInfo(){
-    return (
-        <div className="ForecastInfo">
-            <div className="forecast-card">
-                <ul>
-                    <li className="forecast-day">Sat</li>
-                    <li className="forecast-icon">
-                        <img src={Sunny} alt={"icon"} />
-                    </li>
-                    <li className="forecast-temperature">
-                        <span className="min-temp">25°</span>
-                        <span className="max-temp">27°</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    );
+function ForecastInfo(props) {
+  function Day() {
+    let date = new Date(props.data.dt * 1000);
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let day=date.getDay();
+    return days[day];
+  }
+
+  return (
+    <div className="ForecastInfo">
+      <div className="forecast-card">
+        <ul>
+          <li className="forecast-day">{Day()}</li>
+          <li className="forecast-icon">
+            <WeatherIcon code={props.data.weather[0].icon} />
+          </li>
+          <li className="forecast-temperature">
+            <span className="min-temp">{Math.round(props.data.temp.min)}°</span>
+            <span className="max-temp">{Math.round(props.data.temp.max)}°</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
-
-
-
 
 export default ForecastInfo;

@@ -1,5 +1,9 @@
 .Weather {
-  font-family: "Quicksand", Helvetica, Arial, sans-serif;
+    font-family: "Quicksand", Helvetica, Arial, sans-serif;
+
+}
+
+.current-weather {
   background: white;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -9,12 +13,12 @@
 
 
 
-.Weather form {
+.current-weather form {
   margin-top: 40px;
   padding-bottom: 30px;
 }
 
-.Weather .search-input {
+.current-weather .search-input {
   background: #ededed;
   border: none;
   padding: 15px 20px;
@@ -26,7 +30,7 @@
   line-height: 20px;
 }
 
-.Weather .btn {
+.current-weather .btn {
   background: #2b1df0;
   font-weight: bold;
   font-size: 16px;
@@ -36,12 +40,12 @@
   width: 50px;
 }
 
-.Weather .search-input::placeholder {
+.current-weather .search-input::placeholder {
   line-height: 20px;
   color: rgba(39, 33, 66, 0.4);
 }
 
-.Weather h1 {
+.current-weather h1 {
   margin: 20px 0 10px 0;
   font-weight: bold;
   font-size: 38px;
@@ -50,12 +54,12 @@
   color: #272142;
 }
 
-.Weather ul {
+.current-weather ul {
   margin: 0;
   padding: 0;
 }
 
-.Weather li {
+.current-weather li {
   font-weight: 500;
   margin-bottom: 5px;
   color: rgba(39, 33, 66, 0.4);
@@ -64,11 +68,11 @@
   list-style: none;
 }
 
-.Weather li strong {
+.current-weather li strong {
   color: #6e6e6e;
 }
 
-.Weather .temperature {
+.current-weather .temperature {
   color: rgb(33, 33, 33);
   margin-left: 10px;
   font-weight: bold;
@@ -76,15 +80,34 @@
   line-height: 1;
 }
 
-.Weather canvas {
+.current-weather canvas {
   margin: 10px 0;
 }
 
-.Weather .unit {
+.current-weather .unit {
   color: rgb(33, 33, 33);
   font-size: 28px;
   font-weight: normal;
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+@media screen and (max-width:500px) {
+
+  .current-weather h1 {
+  margin: 0 0 10px 0;
+  font-size: 34px;
+}
+
+.current-weather .temperature {
+ 
+  font-size: 50px;
+}
+.current-weather .unit {
+    font-size: 18px;
+      top:-17px;
+
+}
+
 }
