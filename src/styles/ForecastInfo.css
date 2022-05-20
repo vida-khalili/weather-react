@@ -38,3 +38,9 @@
     padding: 10px;
   }
 }
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .forecast-card {
+    width: 135px;
+  }
+}
