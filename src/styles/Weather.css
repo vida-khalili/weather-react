@@ -93,6 +93,12 @@
   top: -34px;
 }
 
+.loading-bars{
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
 @media screen and (max-width:500px) {
 
   .current-weather h1 {
@@ -109,5 +115,6 @@
       top:-17px;
 
 }
+
 
 }
