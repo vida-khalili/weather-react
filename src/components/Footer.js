@@ -21,7 +21,7 @@ function Footer() {
         </a>{" "}
         and{" "}
         <a
-            href="https://fanciful-tarsier-621537.netlify.app/"
+            href="https://weatherapp-vid.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
         >
